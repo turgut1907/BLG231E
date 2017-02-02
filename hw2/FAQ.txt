@@ -1,0 +1,28 @@
+1) Exit() fonksiyonunda writeToFile() fonksiyonunu çaðýrýp listeleri deallocate etme gibi gerekli diðer iþlemleri yapacaksýnýz.
+
+2) Kendiniz programda þarký ekleyemiyorsunuz. Listedeki þarkýlarla çalýþýlacak. Ýsteyen songbook.txt dosyasýna ilgili formatta yeni þarký ismi ekleyebilir.
+3) Özellikle belirtilmemiþ olabilir ama Deallocation herzaman yapmanýz gereken birþey.
+
+4) Kronolojik liste yýllara göre sýralý liste deðildir! Dosyadaki sýraya göre oluþturulacaktýr. Þarkýnýn çýkýþ yýlý sadece yeni PL'ler oluþturulurken kullanýlabilecek bir parametredir.
+
+5) Slow playlisti dosyaya örnek olsun diye koyulmuþtur. Yeni playlistler oluþturdugunuzda o þekilde dosyaya eklenecek. Ýlk okumada analistenin dýþýnda liste var mý diye kontrol etmelisiniz("*****") eðer varsa o listeleri de oluþturmalýsýnýz.
+
+6)>>>> songbook.txt'nin asýl hali ilk 23 satýrdýr. Diðer kýsmý yokmuþ gibi düþünün, silin. Yeni playlistler eklediðinizde benzer hali alacaktýr.
+
+DÝKKAT !!: Kullanýcý tarafýndan oluþturulacak diðer playlistlerin þarkýlarý için yeni song_node'lar oluþturulacak ancak data kýsmý için yeni song oluþturulmayacak sorted PL'ten ilgili song'a iþaret edecek.
+
+Tamam arkadaþlar daha fazla kafa karýþklýðýna gerek yok. chronological PL'i year özelliðine göre sýralý da alabilirsiniz dosyadaki sýraya görede. bir sonraki kaydediþinizde yýllara göre kaydedilmiþ olur pek biþey farketmez. Ödevi hazýrlayan ile son güncelleyen biz asistanlar arasýnda bir yanlýþ anlaþýlma olmuþ. Her ikisini de kabul edeceðim
+
+Üst tarafta struct playlist; prototipini oluþturursanýz sýkýntý çýkmaz. parent özellikle her song_node'dan ilgili playliste kolaylýkla geçebilmeniz için eklendi. 
+ 
+struct playlist; 
+struct song_node {
+  song* data;
+  song_node* next;   song_node* prev;
+  playlist* parent;
+}; 
+struct playlist {
+  int songnumber;   char* name = new char[LNAME_LENGTH];
+  song_node* head;
+  playlist* next;   playlist* prev;
+}; 
