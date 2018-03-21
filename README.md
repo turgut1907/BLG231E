@@ -2,7 +2,7 @@
 ###### Projects are written with C++ unless mentioned differently.
 
 ### BLG231E - Data Structures
-**HW1:** A basic hospital record system
+**HW1:** A basic hospital record system <br />
 **HW2:** A virtual music player with self-implemented lists
 
 ### BLG456E - Robotics
