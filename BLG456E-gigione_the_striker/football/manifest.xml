@@ -1,0 +1,15 @@
+<package>
+  <description brief="football">
+
+     football
+
+  </description>
+  <author>tca</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/football</url>
+  <depend package="turtlebot_gazebo"/>
+
+</package>
+
+
