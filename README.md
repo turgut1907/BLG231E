@@ -11,9 +11,9 @@
 ### BLG336E - Analysis of Algorithms II
 **HW1:** A river-crossing problem that solved with BFS and DFS
 
-### BLG413E - System Programming - coded with C.
+### BLG413E - System Programming - coded with C
 **P2:** A linux-kernel module project that provides communication between users <br />
 **P3:** A linux folder system that "folderizes" postal codes grabbed from a text file
 
-### BLG312E - Computer Operating Systems - coded with C.
+### BLG312E - Computer Operating Systems - coded with C
 **HW3:** A C project that aims to use threads and processes in a hiring process for a company
