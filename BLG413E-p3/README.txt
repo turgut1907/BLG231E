@@ -1,0 +1,1 @@
+The code, the mounting directory and the .csv file which is named as "postal-codes.csv" should be in the same parent directory.
