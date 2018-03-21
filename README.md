@@ -6,7 +6,11 @@
 **HW2:** A virtual music player with self-implemented list structure
 
 ### BLG456E - Robotics
-**Term Project:** A turtlebot project that aims to find balls and try to make goals in a self-made football field.
+**Term Project:** A turtlebot project that aims to find balls and try to make goals in a self-made football field
 
 ### BLG336E - Analysis of Algorithms II
 **HW1:** A river-crossing problem that solved with BFS and DFS
+
+### BLG413E - System Programming - coded with C.
+**P2:** A linux-kernel module project that provides communication between users <br />
+**P3:** A linux folder system that "folderizes" postal codes grabbed from a text file
